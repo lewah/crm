@@ -1,16 +1,16 @@
 import React from 'react';
 import { Jumbotron, Form, Button} from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
-import PropTypes from 'prop-types'
-import './addform.style.css'
+import PropTypes from 'prop-types';
+import './addform.style.css';
 
-export const AddForm = ({handleOnSubmit, handleOnChange, frmDt }) => {
+export const AddForm = ({handleOnSubmit, handleOnChange, frmDt, frmDataErro }) => {
 
 console.log(frmDt)
 
   return (
   <Jumbotron className = '  add-form mt-3 bg-light '>
-      <h1 className = 'text-center' font-size = '1px' >Add Parent Details</h1>
+      <h1 className = 'text-center' >Add Parent Details</h1>
 
     <Form autoComplete='off' onSubmit = {handleOnSubmit}   >
         <Form.Group as={Row}>
@@ -19,10 +19,16 @@ console.log(frmDt)
             <Form.Control
             name = 'subject'
             value = {frmDt.subject}
+            // minLength = '3' //forces you to have a val more than 3 char
+            // maxLength = ''  // opp of minLength
             onChange = {handleOnChange}
             placeholder = 'Name'
             required
             />
+            <Form.Text>
+            {frmDataErro.subject && "subject required"}
+            </Form.Text>
+
             </Col>
         </Form.Group>
 
@@ -73,7 +79,7 @@ console.log(frmDt)
             name = 'location'
             value = {frmDt.location}
             onChange = {handleOnChange}
-            required
+
             />
             </Col>
         </Form.Group>
@@ -100,7 +106,7 @@ console.log(frmDt)
             value = {frmDt.detail}
             rows = '3'
             onChange = {handleOnChange}
-            required
+
             />
             </Col>
         </Form.Group>
@@ -114,5 +120,6 @@ console.log(frmDt)
 AddForm.propTypes = { //using propTypes to check static datatype
   handleOnSubmit: PropTypes.func.isRequired,  //prop value
   handleOnChange: PropTypes.func.isRequired,       // "
-  frmDt: PropTypes.object.isRequired                // "
+  frmDt: PropTypes.object.isRequired ,               // "
+  frmDataErro:PropTypes.object.isRequired ,
 }

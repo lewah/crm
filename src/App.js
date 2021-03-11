@@ -7,21 +7,22 @@ import { Entry} from './pages/entry/Entry.page';
 import { Button} from 'react-bootstrap';
 import { AddUser } from './pages/new-user/AddUser.page'
 import { AddForm } from './components/userform/AddForm.comp';
+
 function App() {
-  return (
- <div className="App">
+      return (
+         <div className="App">
 
-<DefaultLayout>
-{/*<Dashboard />*/}
- {/*<Entry />*/}
-<AddUser />
+            <DefaultLayout>
+            {/*<Dashboard />*/}
+             {/*<Entry />*/}
+            <AddUser />
 
 
-</DefaultLayout>
+            </DefaultLayout>
 
- </div>
+         </div>
 
- );
+     );
 }
 
 export default App;
