@@ -1,0 +1,57 @@
+{"list":[
+  {
+    "id" :1,
+    "name":"Felix Omadi",
+    "email": "flix@gmail.com",
+    "number" : "0723232323",
+    "location": "Siaya",
+    "payed" : "Android",
+    "owner": "Mercy Mugo",
+    "date" : "2021-09-03"
+  },
+
+  {
+    "id" :2,
+    "name":"Felix Omadi",
+    "email": "flix@gmail.com",
+    "number" : "0723232323",
+    "location": "Siaya",
+    "payed" : "Android",
+    "owner": "Mercy Mugo",
+    "date" : "2021-09-03"
+  },
+
+  {
+    "id" :3,
+    "name":"Felix Omadi",
+    "email": "flix@gmail.com",
+    "number" : "0723232323",
+    "location": "Siaya",
+    "payed" : "Android",
+    "owner": "Mercy Mugo",
+    "date" : "2021-09-03"
+  },
+
+  {
+    "id" :4,
+    "name":"Felix Omadi",
+    "email": "flix@gmail.com",
+    "number" : "0723232323",
+    "location": "Siaya",
+    "payed" : "Android",
+    "owner": "Mercy Mugo",
+    "date" : "2021-09-03"
+  },
+
+  {
+    "id" :5,
+    "name":"Felix Omadi",
+    "email": "flix@gmail.com",
+    "number" : "0723232323",
+    "location": "Siaya",
+    "payed" : "Android",
+    "owner": "Mercy Mugo",
+    "date" : "2021-09-03"
+  }
+]
+}
