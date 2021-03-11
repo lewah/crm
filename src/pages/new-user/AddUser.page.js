@@ -8,44 +8,45 @@ const initialFrmDt = {
   detail: '',
   number: '',
   course:'',
-  location: '',
+  location: ''
 };
 
 export const AddUser = () => {
 
-const [frmData, setFrmData] = useState(initialFrmDt);   //setFrmData = variable frmData = function
-useEffect(() => {}, [frmData]);
+  const [frmData, setFrmData] = useState(initialFrmDt);   //setFrmData = variable frmData = function
 
-  const handleOnChange = e =>{
-    const {name,value} = e.target; //name is subject(AddForm) value is what we type
+  useEffect(() => {}, [frmData]); //handles updating the component of the changed value of frmData
 
-setFrmData({          //state
-  ...frmData,
-  [name]: value,
-})
+    const handleOnChange = e =>{
+      const {name,value} = e.target; //name is subject(AddForm) value is what we type
 
-    console.log(name,value);
+  setFrmData({          //state
+    ...frmData,
+    [name]: value,
+  })
+
+      console.log(name,value);
+    };
+
+    const handleOnSubmit = e =>{
+      e.preventDefault();
+    console.log('request received', frmData);
+
   }
 
-  const handleOnSubmit = e =>{
-    e.preventDefault();
-  console.log('request received', frmData);
+    return (
+      <div className= "add-user" >
+      <Container >
+        <Row>
+          <Col>
+            <AddForm
+            handleOnChange={handleOnChange}
+            handleOnSubmit={handleOnSubmit}
+            frmDt = {frmData}/>                             {/* handleOnChange is passed as a prop*/}
+          </Col>
+        </Row>
 
-}
-
-  return (
-    <div className= "add-user" >
-    <Container >
-      <Row>
-        <Col>
-          <AddForm
-          handleOnChange={handleOnChange}
-          handleOnSubmit={handleOnSubmit}
-          frmDt = {frmData}/> // handleOnChangeis passed as a prop
-        </Col>
-      </Row>
-
-    </Container>
-    </div>
-  )
+      </Container>
+      </div>
+    )
 };
