@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Container, Row, Col, Button } from 'react-bootstrap';
 import {ParentTable }from '../../components/tables/ParentTable.comp';
 const list=require('../../assets/data/dummy-data.json').list

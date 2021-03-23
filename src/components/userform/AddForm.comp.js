@@ -1,7 +1,6 @@
 import React from 'react';
 import { Jumbotron, Form, Button} from 'react-bootstrap';
-import { Container, Row, Col } from 'react-bootstrap';
-import PropTypes from 'prop-types';
+import { Row, Col } from 'react-bootstrap';
 import './addform.style.css';
 
 export const AddForm = ({handleOnSubmit, handleOnChange, frmDt, frmDataErro }) => {
@@ -19,8 +18,8 @@ console.log(frmDt)
             <Form.Control
             name = 'subject'
             value = {frmDt.subject}
-            // minLength = '3' //forces you to have a val more than 3 char
-            // maxLength = ''  // opp of minLength
+            minLength = '3' //forces you to have a val more than 3 char
+            maxLength = ''  // opp of minLength
             onChange = {handleOnChange}
             placeholder = 'Name'
             required

@@ -1,10 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
+// import {NavDropdown, NavbarBrand} from 'react-bootstrap';
 import {
   Navbar,
   Nav,
-  NavbarBrand,
-  NavDropdown,
   FormControl,
   Form,
   Button,

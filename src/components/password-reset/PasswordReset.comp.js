@@ -9,10 +9,8 @@ import {
 
 } from 'react-bootstrap';
 
-export const PasswordReset = ({ handleOnChange, handleOnResetSubmit,formSwitcher, email }) => { // here we are destructuring the props
-
-
-
+export const PasswordReset = ({ handleOnChange, handleOnResetSubmit,formSwitcher, email }) => {
+// here we are destructuring the props
 
 return(
   <Container>
@@ -47,7 +45,7 @@ return(
   </Container>
   );
 };
-// makes sure the props come in the rightway
+{/*makes sure the props come in the rightway*/}
 PasswordReset.ProtoTypes = {
   handleOnChange: ProtoTypes.func.isRequired,
   handleOnResetSubmit: ProtoTypes.func.isRequired,

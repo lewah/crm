@@ -1,7 +1,5 @@
 import React ,{useState} from 'react';
-import ReactDOM from 'react-dom';
 import './entry.style.css';
-
 import {Jumbotron} from 'react-bootstrap';
 import {LoginForm} from '../../components/login/Login.comp';
 import {PasswordReset} from '../../components/password-reset/PasswordReset.comp';

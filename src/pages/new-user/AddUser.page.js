@@ -23,7 +23,7 @@ const initialFrmError = {
 
 export const AddUser = () => {
 
-      const [frmData, setFrmData] = useState(initialFrmDt);   //setFrmData = variable frmData = function
+      const [frmData, setFrmData] = useState(initialFrmDt);   //setFrmData = function frmData = variable
       const [frmDataErro, setFrmDataErro] = useState(initialFrmError);
 
       useEffect(() => {}, [frmData, frmDataErro]); //handles updating the component of the changed value of frmData
@@ -34,7 +34,7 @@ export const AddUser = () => {
                 setFrmData({          //state
                   ...frmData,
                   [name]: value,
-                })
+                });
 
               console.log(name,value);
         };
@@ -45,6 +45,7 @@ export const AddUser = () => {
               setFrmDataErro(initialFrmError)
 
               const isSubjectValid = await shortText(frmData.subject);
+
               setFrmDataErro({
                 ...initialFrmError,
                 subject: !isSubjectValid,

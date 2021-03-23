@@ -3,8 +3,8 @@
     "id" :1,
     "name":"Felix Omadi",
     "email": "flix@gmail.com",
-    "number" : "0723232323",
-    "location": "Siaya",
+    "number" : "0722445566",
+    "location": "Embu",
     "payed" : "Android",
     "owner": "Mercy Mugo",
     "date" : "2021-09-03"
@@ -12,45 +12,45 @@
 
   {
     "id" :2,
-    "name":"Felix Omadi",
-    "email": "flix@gmail.com",
-    "number" : "0723232323",
-    "location": "Siaya",
-    "payed" : "Android",
-    "owner": "Mercy Mugo",
+    "name":"John Maxwell",
+    "email": "johnM@gmail.com",
+    "number" : "0711998877",
+    "location": "Kisii",
+    "payed" : "Laravel",
+    "owner": "Jane Muyu",
     "date" : "2021-09-03"
   },
 
   {
     "id" :3,
-    "name":"Felix Omadi",
-    "email": "flix@gmail.com",
-    "number" : "0723232323",
-    "location": "Siaya",
-    "payed" : "Android",
-    "owner": "Mercy Mugo",
+    "name":"Steve Oguta",
+    "email": "steveO@gmail.com",
+    "number" : "0744776633",
+    "location": "Kilifi",
+    "payed" : "Python",
+    "owner": "Flex Tokodi",
     "date" : "2021-09-03"
   },
 
   {
     "id" :4,
-    "name":"Felix Omadi",
-    "email": "flix@gmail.com",
-    "number" : "0723232323",
-    "location": "Siaya",
-    "payed" : "Android",
-    "owner": "Mercy Mugo",
+    "name":"Hamisa Ramsa",
+    "email": "hamisa@gmail.com",
+    "number" : "0722889955",
+    "location": "Mombasa",
+    "payed" : "Flutter",
+    "owner": "Juma Xero",
     "date" : "2021-09-03"
   },
 
   {
     "id" :5,
-    "name":"Felix Omadi",
-    "email": "flix@gmail.com",
-    "number" : "0723232323",
-    "location": "Siaya",
+    "name":"Khalilah Khalid",
+    "email": "Khalid@gmail.com",
+    "number" : "0745645645",
+    "location": "Lamu",
     "payed" : "Android",
-    "owner": "Mercy Mugo",
+    "owner": "Mercy Mwai",
     "date" : "2021-09-03"
   }
 ]
