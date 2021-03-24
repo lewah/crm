@@ -8,10 +8,10 @@ export const SearchForm = ({handleOnChange, str}) => {
     <div>
       <Form>
         <Form.Group as = {Row}>
-            <Form.Label column ms = '2'>        {/*ms or sm*/}
+            <Form.Label column sm = '2'>        {/*ms or sm*/}
                Search:
               </Form.Label>
-            <Col ms = '10'>
+            <Col sm = '6'>
               <Form.Control
                 name = 'searchStr'
                 placeholder = 'Search ...'
